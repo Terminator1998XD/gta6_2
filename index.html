@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <script type="text/javascript" src="//vkplay.ru/app/33280/static/mailru.core.js"></script>
+    <script src="js/dtc.js"></script>
+	  <script src="js/jquery.js"></script>
+    <script src="js/local.js"></script>
+    <script src="js/fix.js"></script>
+    <script src="js/YSDKManager.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/MainMenu.js"></script>
+    <script src="js/winlose.js"></script>
+    <script src="js/InGameUI.js"></script>
+    <script src="js/gameloader.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/winlose.css">
+    <script>
+      window.alert = function(_log){console.log(_log);};
+      document.addEventListener('DOMContentLoaded',function(){
+        window.unityInstance = UnityLoader.instantiate("unityContainer", "Build/build.json");
+      });
+    </script>
+  </head>
+  <body oncontextmenu="return false;">
+    <div id="unityContainer" style="width: 100%; height: 100%; margin: auto"></div>
+    <div id="fix" style="display:none" onclick="fix.imready()">
+    <div style="pointer-events:none" class="fixcont">
+    	<p style="pointer-events:none"><img src="img/finger.png" style="pointer-events:none"></p>
+    	<p style="pointer-events:none" translate="Your task is to steal gold bars. Also, you shouldn't run into lasers or other helicopters.">Твоя задача воровать слитки с золотом. Также ты не должен столкнутся с лазерами, либо с другими вертолетами.</p>
+    	<p style="pointer-events:none" translate="If you are ready, tap the screen with your cursor or finger.">Если вы готовы, нажмите на экран курсором или пальцем.</p>
+    </div>
+    </div>
+    <div class="overlay" style="display:none">
+      <div id="mm" class="content" style="display:none"></div>
+      <div class="contentT1" id="wm" style="display:none"></div>
+    </div>
+  </body>
+</html>

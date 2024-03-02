@@ -1,0 +1,62 @@
+.window{
+  display: block;
+  width: 40vw;
+  height: 40vh;
+  background-color: rgba(230, 127, 205, 0.91);
+  color: white;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.window h1{
+  background-color: rgba(228, 77, 192, 0.91);
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+}
+
+.window .starContainer{
+  display: block;
+  margin-top: 5.5vh;
+  width: 100%;
+  height: 20vh;
+}
+
+.window .buttonsContainer{
+  display: block;
+  width: 100%;
+  height: 10vh;
+}
+
+.buttonsContainer .button{
+  display: inline-block;
+  background-color: rgba(228, 40, 206, 0.56);
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  border-radius: 30px;
+}
+
+.window .buttonsContainer .button{
+  width: 6vw;
+  height: 8vh;
+}
+
+.window .buttonsContainer .button img{
+  width: 100%;
+  height: 100%;
+}
+
+.buttonsContainer .button:hover{
+  background-color: rgb(228, 40, 206);
+}
